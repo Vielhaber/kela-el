@@ -1128,7 +1128,7 @@ a {
     color: var(--color-white);
 }
 
-/* Responsive */
+/* Responsive Optimizations (Desktop, Tablet, Mobile) */
 @media (max-width: 1024px) {
     .pos-grid {
         grid-template-columns: 1fr;
@@ -1143,6 +1143,15 @@ a {
     .checkout-config {
         padding-right: 0;
     }
+    
+    .apple-features-list {
+        gap: 1.2rem;
+    }
+    
+    .feature-item {
+        padding: 2.2rem 1.5rem;
+        min-height: 310px; /* Adjust desktop height slightly for tablet wrap */
+    }
 }
 
 @media (max-width: 768px) {
@@ -1150,6 +1159,17 @@ a {
         padding: 4rem 0;
     }
     
+    /* Header optimization for mobile */
+    .nav-links {
+        display: none; /* Hide navigation links to prevent overlapping on mobile */
+    }
+    
+    .header-cta .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+    }
+    
+    /* Hero Section mobile adjustments */
     .hero-split-container {
         display: none;
     }
@@ -1158,20 +1178,33 @@ a {
         background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.9) 100%), url('assets/kettle_creme_lifestyle.jpg');
         background-size: cover;
         background-position: center;
+        height: 80vh;
     }
     
     .hero-headline {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
     
+    .hero-subheadline {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* Product Section mobile adjustments */
     .apple-product-title {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
     
     .apple-specs-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
         padding: 2rem 0;
+    }
+    
+    .widget-status-display {
+        grid-template-columns: 1fr; /* Stack battery widget vertically on tablets & mobiles */
+        gap: 2rem;
+        padding: 1.8rem;
     }
     
     .contrast-grid {
@@ -1180,7 +1213,7 @@ a {
     }
     
     .contrast-card {
-        padding: 2rem;
+        padding: 2.2rem;
     }
     
     .footer-content {
@@ -1192,6 +1225,60 @@ a {
     .footer-legal {
         flex-direction: column;
         gap: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-bar {
+        font-size: 0.62rem;
+        padding: 0.6rem 0.8rem;
+        letter-spacing: 0.02em;
+    }
+    
+    .brand-name {
+        font-size: 0.85rem;
+    }
+    
+    .collection-tag {
+        font-size: 0.5rem;
+    }
+    
+    /* Concept Selector mobile wrap */
+    .concept-selector {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    /* Simulator Metrics mobile grid */
+    .sim-metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    
+    .sim-metric-num {
+        font-size: 1.8rem;
+    }
+    
+    /* Simulator Chart mobile stack */
+    .chart-bar-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+    
+    .bar-label {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    
+    .bar-value {
+        width: 100%;
+        text-align: left;
+        font-size: 0.8rem;
+    }
+    
+    .simulator-results {
+        padding: 1.8rem;
     }
 }
 
