@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kela B2B - Die Design-Serie</title>
+    <meta name="description" content="Kela B2B Fachportal. Großhandelskonditionen für die Design-Küchengeräte Santos und Split.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- B2B Announcement Bar -->
+    <div class="announcement-bar">
+        <span>B2B EXKLUSIV — LAGERWARE SOFORT VERSANDBEREIT — LIEFERUNG IN 3-5 WERKTAGEN</span>
+    </div>
+
+    <!-- Minimal Header (Apple-Style) -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="brand-name">KELA</span>
+                <span class="collection-tag">B2B PORTAL</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#specs-split">Zerkleinerer</a>
+                <a href="#specs-santos">Wasserkocher</a>
+                <a href="#pos-concept">Marketing</a>
+                <a href="#checkout">B2B-Planer</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#checkout" class="btn btn-outline btn-sm">Menge kalkulieren</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Fullscreen Hero Section (Apple-Style Centered) -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-split-container">
+                <div class="hero-split split-left" data-product="chopper">
+                    <div class="split-bg" style="background-image: url('assets/chopper_creme_lifestyle.jpg');"></div>
+                    <div class="split-content-overlay"></div>
+                </div>
+                <div class="hero-split split-right" data-product="kettle">
+                    <div class="split-bg" style="background-image: url('assets/kettle_creme_lifestyle.jpg');"></div>
+                    <div class="split-content-overlay"></div>
+                </div>
+            </div>
+            
+            <div class="hero-text-content">
+                <p class="hero-pre-headline">Die Kela B2B Premium-Kollektion</p>
+                <h1 class="hero-headline">Höchste Performance.<br>Smarte Technik.</h1>
+                <p class="hero-subheadline">
+                    Entwickelt für die anspruchsvolle Gastronomie und den exklusiven Fachhandel.
+                </p>
+                <div class="hero-b2b-price-badge">
+                    <span>B2B-Aktions-Nettopreis: <strong>30,95 €</strong></span>
+                    <span class="uvp-info">UVP: 59,95 € (Über 48% Händlerspanne)</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="#checkout" class="btn btn-primary">Jetzt Menge anfragen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Product 1 Spotlight (Apple-Style Vertical Layout) -->
+        <section id="specs-split" class="section product-section text-center">
+            <div class="container container-narrow">
+                <span class="product-meta" id="chopperMeta">ART.-NR. 10131 (CREME)</span>
+                <h2 class="apple-product-title">Zerkleinerer Split.</h2>
+                
+                <!-- Color Selector -->
+                <div class="color-swatches-container justify-center">
+                    <span class="swatches-label">Farbe wählen:</span>
+                    <div class="swatches" data-target="chopper">
+                        <span class="swatch swatch-creme active" 
+                              data-color="creme" 
+                              data-art="ART.-NR. 10131 (CREME)"
+                              data-lifestyle="assets/chopper_creme_lifestyle.jpg" 
+                              data-cutout="assets/chopper_creme.jpg" 
+                              title="Creme"></span>
+                        <span class="swatch swatch-dunkelgrau" 
+                              data-color="grau" 
+                              data-art="ART.-NR. 10130 (DUNKELGRAU)"
+                              data-lifestyle="assets/chopper_grau_lifestyle.jpg" 
+                              data-cutout="assets/chopper_grau.jpg" 
+                              title="Dunkelgrau"></span>
+                    </div>
+                </div>
+
+                <p class="apple-product-subtitle">
+                    Kabellose Flexibilität ohne Kabelsalat. Der leistungsstarke 200 Watt Akkumotor des Zerkleinerers „Split“ bietet kompromisslose Performance und extreme Ausdauer, die Händler und Endkunden gleichermaßen überzeugt.
+                </p>
+
+                <!-- Centered Product Display (Hover Interactive) -->
+                <div class="apple-image-wrapper">
+                    <div class="image-hover-container">
+                        <img src="assets/chopper_creme_lifestyle.jpg" id="chopperImgLifestyle" alt="Kela Zerkleinerer Split - Lifestyle" class="lifestyle-img">
+                        <img src="assets/chopper_creme.jpg" id="chopperImgCutout" alt="Kela Zerkleinerer Split - Cutout" class="cutout-img">
+                    </div>
+                </div>
+
+                <!-- Interactive Battery & Power Widget (Apple Bento Style) -->
+                <div class="battery-widget" id="batteryWidget">
+                    <h4 class="widget-title">Akkulaufzeit & Leistung im Härtetest</h4>
+                    
+                    <div class="widget-control-row">
+                        <span class="control-label">Nutzungshäufigkeit simulieren:</span>
+                        <div class="freq-buttons">
+                            <button class="freq-btn active" data-freq="weekly">1x pro Woche</button>
+                            <button class="freq-btn" data-freq="multi">3x pro Woche</button>
+                            <button class="freq-btn" data-freq="daily">1x täglich</button>
+                        </div>
+                    </div>
+
+                    <div class="widget-status-display">
+                        <div class="battery-progress-container">
+                            <div class="battery-icon-wrapper">
+                                <div class="battery-cap"></div>
+                                <div class="battery-body">
+                                    <div class="battery-level" id="batteryLevel"></div>
+                                </div>
+                            </div>
+                            <div class="battery-metrics">
+                                <span class="metric-val" id="batteryDays">ca. 365 Tage</span>
+                                <span class="metric-lbl">Wartungsfreie Laufzeit</span>
+                            </div>
+                        </div>
+
+                        <div class="power-bars-container">
+                            <div class="p-bar-row">
+                                <span class="p-bar-label">Netzkabel (Standard)</span>
+                                <div class="p-bar-bg"><div class="p-bar-fill corded"></div></div>
+                                <span class="p-bar-percent">100%</span>
+                            </div>
+                            <div class="p-bar-row">
+                                <span class="p-bar-label">Kela Split Akku-Power</span>
+                                <div class="p-bar-bg"><div class="p-bar-fill battery-pow"></div></div>
+                                <span class="p-bar-percent">100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="power-footnote">Die innovative Speicherzelle liefert exakt die gleiche, kompromisslose Zugkraft wie herkömmliche Kabelgeräte.</p>
+                </div>
+
+                <!-- Typographic Performance Specs (Apple Style) -->
+                <div class="apple-specs-grid">
+                    <div class="spec-tile">
+                        <span class="spec-number">200 W</span>
+                        <span class="spec-label">Maximale Akku-Leistung</span>
+                    </div>
+                    <div class="spec-tile">
+                        <span class="spec-number">800 ml</span>
+                        <span class="spec-label">Sicherheitsglas-Behälter</span>
+                    </div>
+                    <div class="spec-tile">
+                        <span class="spec-number">4 Klingen</span>
+                        <span class="spec-label">Edelstahl-Schneidwerk</span>
+                    </div>
+                </div>
+
+                <!-- Detailed Highlights (Apple Style) -->
+                <div class="apple-features-list">
+                    <div class="feature-item">
+                        <strong>Vielseitiger Lieferumfang</strong>
+                        <p>Inklusive dicht schließendem Frischhaltedeckel zur direkten Aufbewahrung im Glasbehälter sowie einer Emulgierscheibe zum schnellen Aufschlagen von Sahne oder Eischnee.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>Hygienisch & Langlebig</strong>
+                        <p>Robuster Behälter aus Sicherheitsglas, der keine Gerüche, Aromen oder Verfärbungen annimmt. Alle Zubehörteile sowie die Glasschüssel sind spülmaschinengeeignet.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>Integriertes Sicherheitssystem</strong>
+                        <p>Der Motor startet erst bei exaktem Einrasten auf der Behälterkupplung. Der abnehmbare Silikon-Anti-Rutsch-Boden dämpft Vibrationen bei maximaler Leistung.</p>
+                    </div>
+                </div>
+
+                <div class="product-action justify-center">
+                    <span class="price">30,95 € <span class="tax-info">netto</span></span>
+                    <a href="#checkout" class="btn btn-outline btn-select" data-select-product="chopper">In B2B-Planer</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Product 2 Spotlight (Apple-Style Vertical Layout) -->
+        <section id="specs-santos" class="section product-section alternate-bg text-center">
+            <div class="container container-narrow">
+                <span class="product-meta" id="kettleMeta">ART.-NR. 10137 (CREME)</span>
+                <h2 class="apple-product-title">Wasserkocher Santos.</h2>
+
+                <!-- Color Selector -->
+                <div class="color-swatches-container justify-center">
+                    <span class="swatches-label">Farbe wählen:</span>
+                    <div class="swatches" data-target="kettle">
+                        <span class="swatch swatch-creme active" 
+                              data-color="creme" 
+                              data-art="ART.-NR. 10137 (CREME)"
+                              data-lifestyle="assets/kettle_creme_lifestyle.jpg" 
+                              data-cutout="assets/kettle_creme.jpg" 
+                              title="Creme"></span>
+                        <span class="swatch swatch-dunkelgrau" 
+                              data-color="grau" 
+                              data-art="ART.-NR. 10135 (DUNKELGRAU)"
+                              data-lifestyle="assets/kettle_grau_lifestyle.jpg" 
+                              data-cutout="assets/kettle_grau.jpg" 
+                              title="Dunkelgrau"></span>
+                        <span class="swatch swatch-matcha" 
+                              data-color="matcha" 
+                              data-art="ART.-NR. 10136 (MATCHA)"
+                              data-lifestyle="assets/kettle_matcha_lifestyle.jpg" 
+                              data-cutout="assets/kettle_matcha.jpg" 
+                              title="Matchagrün"></span>
+                        <span class="swatch swatch-schwarz" 
+                              data-color="schwarz" 
+                              data-art="ART.-NR. 10138 (SCHWARZ)"
+                              data-lifestyle="assets/kettle_schwarz_lifestyle.jpg" 
+                              data-cutout="assets/kettle_schwarz.jpg" 
+                              title="Schwarz"></span>
+                    </div>
+                </div>
+
+                <p class="apple-product-subtitle">
+                    Höchste Repräsentationskraft und langlebige Struktur im gewerblichen Einsatz. Santos überzeugt in Konferenzräumen, Hotelzimmern, Kaffeeküchen oder als ertragreiches Kernprodukt im exklusiven Küchen-Fachhandel.
+                </p>
+
+                <!-- Centered Product Display (Hover Interactive) -->
+                <div class="apple-image-wrapper">
+                    <div class="image-hover-container">
+                        <img src="assets/kettle_creme_lifestyle.jpg" id="kettleImgLifestyle" alt="Kela Wasserkocher Santos - Lifestyle" class="lifestyle-img">
+                        <img src="assets/kettle_creme.jpg" id="kettleImgCutout" alt="Kela Wasserkocher Santos - Cutout" class="cutout-img">
+                    </div>
+                </div>
+
+                <!-- Typographic Performance Specs (Apple Style) -->
+                <div class="apple-specs-grid">
+                    <div class="spec-tile">
+                        <span class="spec-number">1,5 L</span>
+                        <span class="spec-label">Nahtloser 18/10 Edelstahlkern</span>
+                    </div>
+                    <div class="spec-tile">
+                        <span class="spec-number">5 Stufen</span>
+                        <span class="spec-label">Gradgenaue Temperaturwahl</span>
+                    </div>
+                    <div class="spec-tile">
+                        <span class="spec-number">2200 W</span>
+                        <span class="spec-label">Schnellheiz-System</span>
+                    </div>
+                </div>
+
+                <!-- Detailed Highlights (Apple Style) -->
+                <div class="apple-features-list">
+                    <div class="feature-item">
+                        <strong>Cool-Touch-Gehäuse</strong>
+                        <p>Doppelwandige Konstruktion mit nahtlosem Edelstahl-Innengehäuse und hitzeisolierender Außenhülle. Schützt vor Verbrennungen und hält das Wasser länger warm.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>Echtzeit-LED-Temperaturwahl</strong>
+                        <p>Das integrierte LED-Touch-Display zeigt die Wassertemperatur an. 5 voreingestellte Temperaturstufen (40°C bis 100°C) garantieren optimalen Teegenuss.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>120 min Warmhaltefunktion</strong>
+                        <p>Hält die gewünschte Temperatur auf Knopfdruck bis zu 2 Stunden stabil. Perfekt geeignet für Konferenzräume, Hotelzimmer-Verleih oder Kaffeeküchen.</p>
+                    </div>
+                </div>
+
+                <div class="product-action justify-center">
+                    <span class="price">30,95 € <span class="tax-info">netto</span></span>
+                    <a href="#checkout" class="btn btn-outline btn-select" data-select-product="kettle">In B2B-Planer</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. POS & Retail Marketing Concept (Apple Layout) -->
+        <section id="pos-concept" class="section pos-concept-section text-center">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">POS-Marketing-Konzept</span>
+                    <h2>Flächenoptimierte Abverkäufe im stationären Handel.</h2>
+                </div>
+
+                <div class="pos-grid">
+                    <!-- Column 1 -->
+                    <div class="pos-card">
+                        <div class="pos-card-number">01</div>
+                        <h3>Das "Perfect Match" Farb-Duo</h3>
+                        <p class="pos-concept-title">Visual Merchandising</p>
+                        <p class="pos-card-text">
+                            Platzieren Sie Creme & Dunkelgrau direkt nebeneinander. Die harmonische Farbwechselwirkung regt Endkunden erwiesenermaßen dazu an, beide Geräte als ästhetisches Set zu kaufen, was die Doppel-Kaufquote auf der Fläche um bis zu 34% erhöht.
+                        </p>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="pos-card">
+                        <div class="pos-card-number">02</div>
+                        <h3>Live-Erlebnis ohne Kabel</h3>
+                        <p class="pos-concept-title">Haptik-Demonstration</p>
+                        <p class="pos-card-text">
+                            Da der Zerkleinerer "Split" kabellos funktioniert, platzieren Sie ein geladenes Demogerät direkt griffbereit auf dem Verkaufstresen. Das massive Gewicht der Glasschüssel und die spürbare Qualität des Metallknopfs überzeugen Kunden beim Anfassen sofort.
+                        </p>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="pos-card">
+                        <div class="pos-card-number">03</div>
+                        <h3>Themenbasierte Platzierung</h3>
+                        <p class="pos-concept-title">Kontext-Verkauf</p>
+                        <p class="pos-card-text">
+                            Platzieren Sie den Zerkleinerer Split in der Gemüse- & Kräuterabteilung ("Der Pesto-Spezialist") und den Santos Wasserkocher direkt neben Premium-Tee- und Kaffeesorten. Die Platzierung im direkten Bedarfskontext triggert spontane Mitnahmekäufe.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- POS Revenue & Margin Simulator -->
+                <div class="pos-simulator-container" id="posSimulator">
+                    <h3 class="simulator-section-title">POS-Umsatz- & Margensimulator</h3>
+                    <p class="simulator-section-subtitle">Berechnen Sie das Umsatzpotenzial für Ihre Verkaufsfläche basierend auf Ihrem Aufstellungskonzept.</p>
+
+                    <div class="simulator-wrapper">
+                        <!-- Left Panel: Controls -->
+                        <div class="simulator-controls">
+                            <!-- Control 1: Concept Selection -->
+                            <div class="sim-control-group">
+                                <label class="sim-label">POS-Platzierungskonzept:</label>
+                                <div class="concept-selector">
+                                    <button class="concept-btn" data-concept="standard">
+                                        <span class="concept-name">Standard-Regal</span>
+                                        <span class="concept-rate">0,5% Konversion</span>
+                                    </button>
+                                    <button class="concept-btn" data-concept="themen">
+                                        <span class="concept-name">Cross-Selling</span>
+                                        <span class="concept-rate">1,2% Konversion</span>
+                                    </button>
+                                    <button class="concept-btn active" data-concept="premium">
+                                        <span class="concept-name">Premium-Theke</span>
+                                        <span class="concept-rate">2,5% Konversion</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Control 2: Traffic Slider -->
+                            <div class="sim-control-group">
+                                <div class="slider-header">
+                                    <label class="sim-label">Kundenfrequenz am POS (pro Tag):</label>
+                                    <span class="slider-value" id="valTraffic">300 Besucher</span>
+                                </div>
+                                <input type="range" id="simTraffic" min="50" max="1000" value="300" step="50" class="sim-slider">
+                            </div>
+
+                            <!-- Control 3: Time Frame Slider -->
+                            <div class="sim-control-group">
+                                <div class="slider-header">
+                                    <label class="sim-label">Simulationszeitraum:</label>
+                                    <span class="slider-value" id="valMonths">6 Monate</span>
+                                </div>
+                                <input type="range" id="simMonths" min="1" max="12" value="6" step="1" class="sim-slider">
+                            </div>
+                        </div>
+
+                        <!-- Right Panel: Visual Diagram & Metrics -->
+                        <div class="simulator-results">
+                            <!-- Numeric outputs -->
+                            <div class="sim-metrics-grid">
+                                <div class="sim-metric-tile">
+                                    <span class="sim-metric-num" id="simTotalRevenue">0 €</span>
+                                    <span class="sim-metric-lbl">Erwarteter Gesamtumsatz (Brutto)</span>
+                                </div>
+                                <div class="sim-metric-tile">
+                                    <span class="sim-metric-num text-gold" id="simDealerProfit">0 €</span>
+                                    <span class="sim-metric-lbl">Ihr Händler-Reingewinn (Marge)</span>
+                                </div>
+                            </div>
+
+                            <!-- The Diagram (Dynamic Visual Charts) -->
+                            <div class="chart-container">
+                                <h4 class="chart-title">Umsatzvergleich (Netto)</h4>
+                                
+                                <div class="chart-bars">
+                                    <!-- Bar 1: Standard Regal -->
+                                    <div class="chart-bar-row">
+                                        <div class="bar-label">Standard Regal</div>
+                                        <div class="bar-track">
+                                            <div class="bar-fill bar-fill-standard" id="barStandard" style="width: 20%;"></div>
+                                        </div>
+                                        <div class="bar-value" id="lblStandardRevenue">0 €</div>
+                                    </div>
+                                    
+                                    <!-- Bar 2: Kela B2B POS Concept -->
+                                    <div class="chart-bar-row">
+                                        <div class="bar-label text-gold">Kela B2B POS</div>
+                                        <div class="bar-track">
+                                            <div class="bar-fill bar-fill-kela" id="barKela" style="width: 100%;"></div>
+                                        </div>
+                                        <div class="bar-value text-gold" id="lblKelaRevenue">0 €</div>
+                                    </div>
+                                </div>
+                                <p class="chart-subtitle">Das Premium-Aufstellkonzept (Farb-Duo + Demogerät) steigert Ihren Abverkauf um das Fünffache.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. B2B Comparison Table (Apple Style Table) -->
+        <section id="superiority" class="section superiority-section alternate-bg">
+            <div class="container container-narrow">
+                <div class="section-header text-center">
+                    <span class="section-tag">Wirtschaftlichkeit</span>
+                    <h2>Der Unterschied im gewerblichen Einsatz.</h2>
+                </div>
+
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Kriterium</th>
+                                <th class="highlight-column">Kela B2B-Vorteile</th>
+                                <th>Standard Großhandel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Zertifizierung</td>
+                                <td class="highlight-column"><strong>GS-geprüfte Sicherheit & CE-zertifiziert</strong></td>
+                                <td>Einfache CE-Selbsterklärung ohne Fremdprüfung</td>
+                            </tr>
+                            <tr>
+                                <td>Händlerspanne (UVP)</td>
+                                <td class="highlight-column">Über 48% Marge (30,95 € netto zu 59,95 € UVP)</td>
+                                <td>Regulär 20% bis 30% Marge</td>
+                            </tr>
+                            <tr>
+                                <td>Wartungsintensität</td>
+                                <td class="highlight-column">Vollversiegelte, nahtlose Edelstahl-Oberflächen</td>
+                                <td>Flüssigkeitskontakt an Kunststofffugen</td>
+                            </tr>
+                            <tr>
+                                <td>B2B-Logistik</td>
+                                <td class="highlight-column">Zentrallager Deutschland (3-5 Werktage Versand)</td>
+                                <td>Wochenlange Containertransporte</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Interactive B2B Bulk Calculator -->
+        <section id="checkout" class="section checkout-section">
+            <div class="container">
+                <div class="checkout-wrapper">
+                    <!-- Left: Calculator Inputs -->
+                    <div class="checkout-config">
+                        <h3 class="checkout-title">B2B-Kalkulator.</h3>
+                        <p class="checkout-subtitle">Berechnen Sie Ihre Großhandels-Konditionen in Echtzeit.</p>
+                        
+                        <div class="config-options">
+                            <!-- Item 1 Selector -->
+                            <div class="config-item checked" data-item="chopper" data-price="30.95">
+                                <div class="checkbox-indicator"></div>
+                                <div class="config-item-details">
+                                    <span class="config-item-name" id="calcChopperLabel">Zerkleinerer Split (Creme, Art. 10131)</span>
+                                    <span class="config-item-meta">UVP: 59,95 € — Marge über 48%</span>
+                                </div>
+                                <span class="config-item-price">30,95 € net</span>
+                            </div>
+                            
+                            <!-- Item 2 Selector -->
+                            <div class="config-item checked" data-item="kettle" data-price="30.95">
+                                <div class="checkbox-indicator"></div>
+                                <div class="config-item-details">
+                                    <span class="config-item-name" id="calcKettleLabel">Wasserkocher Santos (Creme, Art. 10137)</span>
+                                    <span class="config-item-meta">UVP: 59,95 € — Marge über 48%</span>
+                                </div>
+                                <span class="config-item-price">30,95 € net</span>
+                            </div>
+                        </div>
+
+                        <!-- Quantity Selector -->
+                        <div class="qty-selector-wrapper">
+                            <span class="control-label">Gewünschte Abnahmemenge (je Typ):</span>
+                            <div class="qty-controls">
+                                <button class="qty-btn" id="qtyDec">-</button>
+                                <input type="number" id="bulkQty" value="100" min="10" step="10" class="qty-input">
+                                <button class="qty-btn" id="qtyInc">+</button>
+                            </div>
+                            <div class="scale-discounts-info">
+                                <span>Mengenstaffel: ab 10 Stk: 30,95 € | ab 100 Stk: 29,50 €</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Summary & Calculations -->
+                    <div class="checkout-summary">
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Gewählte Artikel</span>
+                                <span id="summaryItems">Zerkleinerer, Wasserkocher</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Bestellmenge (Gesamt)</span>
+                                <span id="summaryQty">200 Einheiten</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Netto-Einzelpreis</span>
+                                <span id="summaryNetPrice">29,50 €</span>
+                            </div>
+                            <div class="summary-divider"></div>
+                            <div class="summary-row">
+                                <span>Händlerspanne (Ertrag gesamt)</span>
+                                <span id="summaryMargin" class="promo-row">6.090,00 € (50.8%)</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Logistik / Versand</span>
+                                <span class="free-shipping">Kostenfrei (D)</span>
+                            </div>
+                            <div class="summary-divider"></div>
+                            <div class="summary-row total-row">
+                                <span>Gesamtsumme (Netto)</span>
+                                <span id="totalPrice">5.900,00 €</span>
+                            </div>
+                            <span class="tax-notice">Zzgl. gesetzlicher MwSt.</span>
+                        </div>
+
+                        <button class="btn btn-primary btn-block" id="checkoutBtn">Großmenge anfragen</button>
+                        
+                        <div class="guarantee-list">
+                            <span>📦 Lieferung innerhalb von 3-5 Werktagen</span>
+                            <span>📋 Musterbestellungen auf Rechnung möglich</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <span class="footer-logo">KELA</span>
+            <div class="footer-legal">
+                <a href="#">B2B AGB</a>
+                <a href="#">Datenschutz</a>
+                <span>&copy; 2026 Kela GmbH. Alle Rechte vorbehalten.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
